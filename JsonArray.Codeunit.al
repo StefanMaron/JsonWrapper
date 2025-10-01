@@ -39,6 +39,8 @@ codeunit 50101 JsonArray
         Value: JsonToken;
     begin
         this.JArray.Get(Index, Value);
+        if Value.AsValue().IsNull() then
+            exit;
         exit(Value.AsValue().AsText());
     end;
 
@@ -47,6 +49,8 @@ codeunit 50101 JsonArray
         Value: JsonToken;
     begin
         this.JArray.Get(Index, Value);
+        if Value.AsValue().IsNull() then
+            exit;
         exit(Value.AsValue().AsInteger());
     end;
 
@@ -56,6 +60,8 @@ codeunit 50101 JsonArray
         Value: JsonToken;
     begin
         this.JArray.Get(Index, Value);
+        if Value.AsValue().IsNull() then
+            exit;
         exit(Value.AsValue().AsDecimal());
     end;
 
@@ -64,6 +70,8 @@ codeunit 50101 JsonArray
         Value: JsonToken;
     begin
         this.JArray.Get(Index, Value);
+        if Value.AsValue().IsNull() then
+            exit;
         exit(Value.AsValue().AsBoolean());
     end;
 
@@ -72,6 +80,8 @@ codeunit 50101 JsonArray
         Value: JsonToken;
     begin
         this.JArray.Get(Index, Value);
+        if Value.AsValue().IsNull() then
+            exit;
         exit(Value.AsValue().AsDateTime());
     end;
 
@@ -96,6 +106,8 @@ codeunit 50101 JsonArray
         Value: JsonToken;
     begin
         this.JArray.Get(Index, Value);
+        if Value.AsValue().IsNull() then
+            exit;
         exit(Value.AsValue().AsBigInteger());
     end;
 
@@ -104,6 +116,8 @@ codeunit 50101 JsonArray
         Value: JsonToken;
     begin
         this.JArray.Get(Index, Value);
+        if Value.AsValue().IsNull() then
+            exit;
         exit(Value.AsValue().AsCode());
     end;
 
@@ -112,6 +126,8 @@ codeunit 50101 JsonArray
         Value: JsonToken;
     begin
         this.JArray.Get(Index, Value);
+        if Value.AsValue().IsNull() then
+            exit;
         exit(Value.AsValue().AsByte());
     end;
 
@@ -120,6 +136,8 @@ codeunit 50101 JsonArray
         Value: JsonToken;
     begin
         this.JArray.Get(Index, Value);
+        if Value.AsValue().IsNull() then
+            exit;
         exit(Value.AsValue().AsChar());
     end;
 
@@ -128,6 +146,8 @@ codeunit 50101 JsonArray
         Value: JsonToken;
     begin
         this.JArray.Get(Index, Value);
+        if Value.AsValue().IsNull() then
+            exit;
         exit(Value.AsValue().AsDate());
     end;
 
@@ -136,6 +156,8 @@ codeunit 50101 JsonArray
         Value: JsonToken;
     begin
         this.JArray.Get(Index, Value);
+        if Value.AsValue().IsNull() then
+            exit;
         exit(Value.AsValue().AsDuration());
     end;
 
@@ -144,6 +166,8 @@ codeunit 50101 JsonArray
         Value: JsonToken;
     begin
         this.JArray.Get(Index, Value);
+        if Value.AsValue().IsNull() then
+            exit;
         exit(Value.AsValue().AsOption());
     end;
 
