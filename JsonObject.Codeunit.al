@@ -13,6 +13,16 @@ codeunit 50100 JsonObject
         this.JObject := JsonObject;
     end;
 
+    procedure ReadFromYaml(YamlText: Text)
+    begin
+        this.JObject.ReadFrom(YamlText);
+    end;
+
+    procedure WriteToYaml() YamlText: Text
+    begin
+        this.JObject.WriteTo(YamlText);
+    end;
+
     procedure GetJsonObject(): JsonObject
     begin
         exit(this.JObject);
