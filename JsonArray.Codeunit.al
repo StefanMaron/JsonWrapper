@@ -13,6 +13,16 @@ codeunit 50101 JsonArray
         this.JArray := JsonArray;
     end;
 
+    procedure ReadFromYaml(YamlText: Text)
+    begin
+        this.JArray.ReadFrom(YamlText);
+    end;
+
+    procedure WriteToYaml() YamlText: Text
+    begin
+        this.JArray.WriteTo(YamlText);
+    end;
+
     procedure GetJsonArray(): JsonArray
     begin
         exit(this.JArray);
